@@ -1,0 +1,112 @@
+[
+ {
+  "cls": "robust",
+  "oracle": "day_loss",
+  "oracle_cn": "单日亏损超预算",
+  "found_by": "A0_fixed,A1_random,A2_evolve",
+  "fixed_list_found": true,
+  "original": "bad_price(sector:agri @428: factor=10)",
+  "minimal": "bad_price(sector:agri @428: factor=1.141)",
+  "minimal_json": {
+   "prims": [
+    {
+     "kind": "bad_price",
+     "target": "sector:agri",
+     "t0": 428,
+     "params": {
+      "factor": 1.140625
+     }
+    }
+   ],
+   "arm": "A1_random",
+   "cls": "robust",
+   "text": "bad_price(sector:agri @428: factor=1.141)"
+  },
+  "start_date": "20210709",
+  "still_triggers": true,
+  "shrink_evals": 6
+ },
+ {
+  "cls": "robust",
+  "oracle": "stale_open",
+  "oracle_cn": "在陈旧数据上开仓",
+  "found_by": "A1_random,A2_evolve,A3_llm",
+  "fixed_list_found": false,
+  "original": "stale_bars(sector:agri @816: length=5)",
+  "minimal": "stale_bars(sector:agri @816: length=3)",
+  "minimal_json": {
+   "prims": [
+    {
+     "kind": "stale_bars",
+     "target": "sector:agri",
+     "t0": 816,
+     "params": {
+      "length": 3
+     }
+    }
+   ],
+   "arm": "A1_random",
+   "cls": "robust",
+   "text": "stale_bars(sector:agri @816: length=3)"
+  },
+  "start_date": "20230216",
+  "still_triggers": true,
+  "shrink_evals": 6
+ },
+ {
+  "cls": "robust",
+  "oracle": "dd_runaway",
+  "oracle_cn": "窗口回撤超预算",
+  "found_by": "A2_evolve",
+  "fixed_list_found": false,
+  "original": "future_perturb(sector:agri @377: scale=0.1638, seed=185)",
+  "minimal": "future_perturb(sector:agri @377: scale=0.07165, seed=185)",
+  "minimal_json": {
+   "prims": [
+    {
+     "kind": "future_perturb",
+     "target": "sector:agri",
+     "t0": 377,
+     "params": {
+      "scale": 0.07164980063448212,
+      "seed": 185
+     }
+    }
+   ],
+   "arm": "A2_evolve",
+   "cls": "robust",
+   "text": "future_perturb(sector:agri @377: scale=0.07165, seed=185)"
+  },
+  "start_date": "20210423",
+  "still_triggers": true,
+  "shrink_evals": 6
+ },
+ {
+  "cls": "real",
+  "oracle": "day_loss",
+  "oracle_cn": "单日亏损超预算",
+  "found_by": "A0_fixed",
+  "fixed_list_found": true,
+  "original": "limit_lock(sector:agri @558: days=1, direction=-1)",
+  "minimal": "limit_lock(sector:agri @558: days=1, direction=-1)",
+  "minimal_json": {
+   "prims": [
+    {
+     "kind": "limit_lock",
+     "target": "sector:agri",
+     "t0": 558,
+     "params": {
+      "days": 1,
+      "direction": -1
+     }
+    }
+   ],
+   "arm": "A0_fixed",
+   "cls": "real",
+   "text": "limit_lock(sector:agri @558: days=1, direction=-1)"
+  },
+  "start_date": "20220119",
+  "still_triggers": true,
+  "shrink_evals": 0
+ }
+]

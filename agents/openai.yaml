@@ -1,0 +1,7 @@
+name: agent-strategy-red-team
+entrypoint: AGENTS.md
+canonical_root: AGENTS.md
+interface:
+  display_name: "Strategy Red Team"
+  short_description: "Search plausible counterexamples that break a futures strategy, compare with a fixed stress list at equal budget, and regression-test fixes"
+  default_prompt: "Use $agent-strategy-red-team before releasing a futures strategy. Read AGENTS.md first, check the freeze record, run e13/run_e13.py search and adjudicate, then summarize.py, regress.py and report_e13.py, and report detection, false alarms and confirmed counterexamples."

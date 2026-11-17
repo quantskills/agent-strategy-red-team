@@ -1,0 +1,159 @@
+{
+ "platform": "PandaAI EVO 云端工作区（研究助手 · 运行 Python 脚本 · 隔离运行）",
+ "python": "3.11.14",
+ "system": "Linux-5.15.0-191-generic-x86_64-with-glibc2.36",
+ "cpu_count": 32,
+ "workers": "1",
+ "cwd": "/home/coder/project/projects/default/reports/20261117-0257-evo_chunk_124",
+ "bundle": "e13_bundle_20261117_0256.tar.gz",
+ "finished": "2026-11-17 02:58:13 +0800",
+ "chunks": [
+  {
+   "chunk": 1,
+   "vids": "CLEAN",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 46.7
+  },
+  {
+   "chunk": 2,
+   "vids": "CLEAN",
+   "arms": "A2_evolve",
+   "elapsed_s": 33.8
+  },
+  {
+   "chunk": 3,
+   "vids": "EQ",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 48.4
+  },
+  {
+   "chunk": 4,
+   "vids": "EQ",
+   "arms": "A2_evolve",
+   "elapsed_s": 33.6
+  },
+  {
+   "chunk": 5,
+   "vids": "V01",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 49.4
+  },
+  {
+   "chunk": 6,
+   "vids": "V01",
+   "arms": "A2_evolve",
+   "elapsed_s": 36.9
+  },
+  {
+   "chunk": 7,
+   "vids": "V02",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 50.3
+  },
+  {
+   "chunk": 8,
+   "vids": "V02",
+   "arms": "A2_evolve",
+   "elapsed_s": 35.4
+  },
+  {
+   "chunk": 9,
+   "vids": "V03",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 53.6
+  },
+  {
+   "chunk": 10,
+   "vids": "V03",
+   "arms": "A2_evolve",
+   "elapsed_s": 38.2
+  },
+  {
+   "chunk": 11,
+   "vids": "V04",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 56.0
+  },
+  {
+   "chunk": 12,
+   "vids": "V04",
+   "arms": "A2_evolve",
+   "elapsed_s": 37.8
+  },
+  {
+   "chunk": 13,
+   "vids": "V05",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 48.0
+  },
+  {
+   "chunk": 14,
+   "vids": "V05",
+   "arms": "A2_evolve",
+   "elapsed_s": 34.1
+  },
+  {
+   "chunk": 15,
+   "vids": "V06",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 48.1
+  },
+  {
+   "chunk": 16,
+   "vids": "V06",
+   "arms": "A2_evolve",
+   "elapsed_s": 33.6
+  },
+  {
+   "chunk": 17,
+   "vids": "V07",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 45.0
+  },
+  {
+   "chunk": 18,
+   "vids": "V07",
+   "arms": "A2_evolve",
+   "elapsed_s": 31.3
+  },
+  {
+   "chunk": 19,
+   "vids": "V08",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 48.4
+  },
+  {
+   "chunk": 20,
+   "vids": "V08",
+   "arms": "A2_evolve",
+   "elapsed_s": 33.5
+  },
+  {
+   "chunk": 21,
+   "vids": "V09",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 49.2
+  },
+  {
+   "chunk": 22,
+   "vids": "V09",
+   "arms": "A2_evolve",
+   "elapsed_s": 35.8
+  },
+  {
+   "chunk": 23,
+   "vids": "V10",
+   "arms": "A0_fixed,A1_random",
+   "elapsed_s": 60.9
+  },
+  {
+   "chunk": 24,
+   "vids": "V10",
+   "arms": "A2_evolve",
+   "elapsed_s": 38.9
+  }
+ ],
+ "local_runs": [
+  "out/a3_local"
+ ]
+}

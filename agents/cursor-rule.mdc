@@ -1,0 +1,21 @@
+---
+description: Use the strategy red-team agent (agent-strategy-red-team) before releasing a futures strategy, to search plausible counterexamples beyond a fixed stress checklist and regression-test fixes.
+alwaysApply: false
+---
+
+# Strategy Red Team Agent
+
+Read and follow [AGENTS.md](../AGENTS.md) as the canonical instructions.
+
+## Workflow
+
+1. Check `e13/out/freeze.json`; `run_e13.py search` refuses to run if a frozen file changed.
+2. Run the arms, then `adjudicate`, `summarize.py`, `regress.py`, `report_e13.py` (see `references/design.md`).
+3. Return detection by arm with intervals, false-alarm rate, confirmed counterexamples in minimal form, and the four-part regression verdict; attach `report.html`.
+
+## Hard rules
+
+- Real-market scenarios and software-robustness inputs are reported separately.
+- A defect counts as found only when the revert test passes.
+- Never output trade instructions; pair every academic term with a plain-language gloss.
+- Keys and credentials only from environment variables.

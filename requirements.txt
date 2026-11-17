@@ -1,0 +1,4 @@
+numpy>=1.24
+pandas>=2.0
+pyarrow>=12
+# panda_data：PandaData 官方 Python SDK，仅重新拉取数据时需要；随包面板 e13/data/panel/ 可离线运行

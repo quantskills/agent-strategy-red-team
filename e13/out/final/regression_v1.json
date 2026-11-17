@@ -1,0 +1,500 @@
+{
+ "tolerances": {
+  "ret_drop": 0.005,
+  "sharpe_drop": 0.1
+ },
+ "R1_counterexamples": [
+  {
+   "cls": "real",
+   "oracles": "day_loss",
+   "attack": "limit_lock(sector:agri @558: days=1, direction=-1)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(sector:agri @428: factor=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(sector:chem @552: factor=10) + missing_bars(JD @545: length=4) + future_perturb(sector:chem @551: scale=0.02686, seed=351)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(sector:chem @552: factor=10) + missing_bars(sector:black @545: length=4)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "stale_bars(RB @923: length=4) + bad_price(sector:chem @925: factor=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(M @516: factor=10) + gap(P @519: size=0.05865)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(AL @546: factor=10) + liquidity_dry(AL @543: mult=0.5207, length=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(all @257: factor=10) + whipsaw(JD @259: amp=0.02198, cycles=4, period=2)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "partial_fill(sector:metal @183: ratio=0.3, length=2) + bad_price(JD @180: factor=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(MA @841: factor=10) + future_perturb(P @842: scale=0.04841, seed=647)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway,ruin",
+   "attack": "bad_price(MA @843: factor=10) + exec_delay(all @845: days=2, length=5)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway",
+    "ruin"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "stale_open",
+   "attack": "stale_bars(sector:agri @816: length=5)",
+   "S0_hits": [
+    "stale_open"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "stale_open",
+   "attack": "stale_bars(all @940: length=3) + missing_bars(all @940: length=1)",
+   "S0_hits": [
+    "stale_open"
+   ],
+   "S1_hits": [
+    "stale_open"
+   ],
+   "fixed": false
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "bad_price(sector:agri @556: factor=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "bad_price(M @552: factor=10) + missing_bars(sector:black @545: length=4) + future_perturb(sector:chem @551: scale=0.02204, seed=351)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "bad_price(sector:metal @386: factor=10) + margin_hike(SA @388: pp=0.01403, length=5)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "liquidity_dry(JD @171: mult=0.2536, length=1) + bad_price(RB @169: factor=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "vol_burst(SA @175: mult=2.213, length=9) + bad_price(CU @177: factor=10)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "bad_price(AP @546: factor=10) + missing_bars(sector:black @545: length=4)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "limit_lock(CU @637: days=1, direction=1) + bad_price(sector:agri @635: factor=0.1)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "partial_fill(JD @529: ratio=0.4857, length=3) + bad_price(sector:agri @529: factor=2)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "bad_price(sector:agri @950: factor=2) + whipsaw(CU @952: amp=0.006257, cycles=3, period=3)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "stale_bars(all @890: length=2) + bad_price(all @892: factor=0.2)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "reject(I @259: length=2) + bad_price(TA @261: factor=0.1)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "future_perturb(all @500: scale=0.2, seed=144159)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "fixed": false
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss,dd_runaway",
+   "attack": "sector_shock(sector:black @660: size=-0.03575) + bad_price(AL @663: factor=0.1)",
+   "S0_hits": [
+    "day_loss",
+    "dd_runaway"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "stale_open",
+   "attack": "stale_bars(P @378: length=5) + reject(M @378: length=2)",
+   "S0_hits": [
+    "stale_open"
+   ],
+   "S1_hits": [
+    "stale_open"
+   ],
+   "fixed": false
+  },
+  {
+   "cls": "robust",
+   "oracles": "stale_open",
+   "attack": "partial_fill(SA @429: ratio=0.4083, length=1) + stale_bars(AP @432: length=5)",
+   "S0_hits": [
+    "stale_open"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "bad_price(sector:black @735: factor=0.1)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "margin_hike(RB @817: pp=0.04304, length=12) + bad_price(P @818: factor=2)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "bad_price(SA @617: factor=0.1) + gap(RB @616: size=0.05986)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "bad_price(P @861: factor=2) + vol_burst(sector:metal @863: mult=2.441, length=7)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "future_perturb(sector:metal @840: scale=0.1203, seed=340) + bad_price(TA @841: factor=0.1)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "dd_runaway",
+   "attack": "future_perturb(sector:agri @377: scale=0.1638, seed=185)",
+   "S0_hits": [
+    "dd_runaway"
+   ],
+   "S1_hits": [
+    "dd_runaway"
+   ],
+   "fixed": false
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "exec_delay(all @226: days=1, length=8) + bad_price(P @228: factor=2)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "bad_price(sector:metal @591: factor=0.5) + reject(RB @592: length=2)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "sector_shock(sector:chem @397: size=-0.0602) + bad_price(I @394: factor=0.5)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [],
+   "fixed": true
+  },
+  {
+   "cls": "robust",
+   "oracles": "day_loss",
+   "attack": "future_perturb(all @410: scale=0.2, seed=311831)",
+   "S0_hits": [
+    "day_loss"
+   ],
+   "S1_hits": [
+    "day_loss"
+   ],
+   "fixed": false
+  }
+ ],
+ "R2_fixed_list": {
+  "S0_hits": 15,
+  "S1_hits": 4,
+  "S0_real_hits": 1,
+  "S1_real_hits": 0
+ },
+ "R3_performance": {
+  "S0_dev": {
+   "ann_ret": -0.012087922009195062,
+   "sharpe": -0.04167020274408409,
+   "max_dd": -0.33208360817155114,
+   "n_fills": 867
+  },
+  "S0_holdout": {
+   "ann_ret": -0.011625659967129498,
+   "sharpe": -0.053986035599459706,
+   "max_dd": -0.19921484222893227,
+   "n_fills": 679
+  },
+  "S1_dev": {
+   "ann_ret": -0.000801218645095525,
+   "sharpe": 0.04490459350540418,
+   "max_dd": -0.3146323812995987,
+   "n_fills": 973
+  },
+  "S1_holdout": {
+   "ann_ret": -0.05079635845091435,
+   "sharpe": -0.5000354286035931,
+   "max_dd": -0.2324368471436874,
+   "n_fills": 708
+  },
+  "holdout_ret_drop": 0.03917069848378485,
+  "holdout_sharpe_drop": 0.4460493930041334,
+  "within_tolerance": false
+ },
+ "R4_new_search": {
+  "introduced_by_fix": [
+   {
+    "arm": "A1_random",
+    "seed": 1,
+    "cls": "real",
+    "oracles": "overfill",
+    "kinds": "exec_delay",
+    "attack": "exec_delay(all @694: days=2, length=7) + exec_delay(all @696: days=1, length=1)",
+    "introduced_oracles": "overfill"
+   }
+  ],
+  "remaining_n": 2,
+  "remaining_kinds": [
+   [
+    "real",
+    "stop_missed",
+    "partial_fill"
+   ],
+   [
+    "real",
+    "wrong_side",
+    "partial_fill"
+   ]
+  ]
+ },
+ "verdict": {
+  "R1_all_fixed": false,
+  "R2_not_worse": true,
+  "R3_within_tolerance": false,
+  "R4_no_new_issue": false
+ },
+ "fix_version": "v1"
+}

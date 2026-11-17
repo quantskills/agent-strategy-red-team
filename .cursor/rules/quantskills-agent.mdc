@@ -1,0 +1,7 @@
+---
+description: Load the strategy red-team agent (agent-strategy-red-team) before releasing a futures strategy, to search plausible counterexamples and regression-test fixes.
+alwaysApply: false
+---
+
+Follow the canonical root instructions in `AGENTS.md`; this Cursor adapter adds no policy.
+Full workflow and hard rules: `agents/cursor-rule.mdc`.

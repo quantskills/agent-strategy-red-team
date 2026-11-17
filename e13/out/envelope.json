@@ -1,0 +1,126 @@
+{
+ "window": [
+  "20200102",
+  "20231229"
+ ],
+ "products": {
+  "RB": {
+   "limit_pct": 0.05985611510791378,
+   "gap_max": 0.05985611510791378,
+   "ret_p99": 0.05186616216986552,
+   "lock_run_max_obs": 0,
+   "vol_ratio_max": 2.3887211753094943,
+   "volume_ratio_min": 0.32126125414896456,
+   "cum5_abs_max": 0.14468558708959378,
+   "lock_days_max": 1
+  },
+  "I": {
+   "limit_pct": 0.0997876857749469,
+   "gap_max": 0.0796661608497724,
+   "ret_p99": 0.07999495800014113,
+   "lock_run_max_obs": 1,
+   "vol_ratio_max": 2.2037408762603237,
+   "volume_ratio_min": 0.1350304948660542,
+   "cum5_abs_max": 0.23316796598157352,
+   "lock_days_max": 1
+  },
+  "CU": {
+   "limit_pct": 0.06998635743519777,
+   "gap_max": 0.06998635743519777,
+   "ret_p99": 0.038751380100049915,
+   "lock_run_max_obs": 0,
+   "vol_ratio_max": 2.6530097204520104,
+   "volume_ratio_min": 0.3173220095957646,
+   "cum5_abs_max": 0.14518977329240723,
+   "lock_days_max": 1
+  },
+  "AL": {
+   "limit_pct": 0.06997017664601968,
+   "gap_max": 0.06997017664601968,
+   "ret_p99": 0.04240544502519332,
+   "lock_run_max_obs": 0,
+   "vol_ratio_max": 2.4414769924000668,
+   "volume_ratio_min": 0.3233800793430526,
+   "cum5_abs_max": 0.13051069402007853,
+   "lock_days_max": 1
+  },
+  "M": {
+   "limit_pct": 0.059959349593496025,
+   "gap_max": 0.059959349593496025,
+   "ret_p99": 0.04130593717129042,
+   "lock_run_max_obs": 0,
+   "vol_ratio_max": 1.909656244035867,
+   "volume_ratio_min": 0.2564859358328121,
+   "cum5_abs_max": 0.14969325153374236,
+   "lock_days_max": 1
+  },
+  "P": {
+   "limit_pct": 0.06996148908857514,
+   "gap_max": 0.06996148908857514,
+   "ret_p99": 0.061846839498339,
+   "lock_run_max_obs": 1,
+   "vol_ratio_max": 2.1595144167922977,
+   "volume_ratio_min": 0.06940353058568206,
+   "cum5_abs_max": 0.17043078209953988,
+   "lock_days_max": 1
+  },
+  "MA": {
+   "limit_pct": 0.07018328118015194,
+   "gap_max": 0.07018328118015194,
+   "ret_p99": 0.05536222665760084,
+   "lock_run_max_obs": 1,
+   "vol_ratio_max": 2.7250557786026786,
+   "volume_ratio_min": 0.045947562682957875,
+   "cum5_abs_max": 0.18272914824638975,
+   "lock_days_max": 1
+  },
+  "TA": {
+   "limit_pct": 0.0602017572404816,
+   "gap_max": 0.0602017572404816,
+   "ret_p99": 0.05754700229965921,
+   "lock_run_max_obs": 1,
+   "vol_ratio_max": 2.4820944798737097,
+   "volume_ratio_min": 0.036023387143281745,
+   "cum5_abs_max": 0.153047989623865,
+   "lock_days_max": 1
+  },
+  "SA": {
+   "limit_pct": 0.08028251257421704,
+   "gap_max": 0.06531115218730743,
+   "ret_p99": 0.07049880457265804,
+   "lock_run_max_obs": 0,
+   "vol_ratio_max": 2.6127565780507314,
+   "volume_ratio_min": 0.2314315802515022,
+   "cum5_abs_max": 0.207843137254902,
+   "lock_days_max": 1
+  },
+  "AP": {
+   "limit_pct": 0.090034965034965,
+   "gap_max": 0.07638072855464162,
+   "ret_p99": 0.05523790074096352,
+   "lock_run_max_obs": 0,
+   "vol_ratio_max": 2.2336596696050943,
+   "volume_ratio_min": 0.32201683306805573,
+   "cum5_abs_max": 0.15996918731544518,
+   "lock_days_max": 1
+  },
+  "JD": {
+   "limit_pct": 0.059932470455824394,
+   "gap_max": 0.059932470455824394,
+   "ret_p99": 0.047746027205367476,
+   "lock_run_max_obs": 1,
+   "vol_ratio_max": 2.182833495222674,
+   "volume_ratio_min": 0.10982189095819649,
+   "cum5_abs_max": 0.12057702776265655,
+   "lock_days_max": 1
+  }
+ },
+ "rule_bounds": {
+  "margin_hike_pp_max": 0.05,
+  "exec_delay_max": 2,
+  "partial_fill_min": 0.3,
+  "reject_days_max": 3,
+  "len_max": 20,
+  "source_margin": "交易所在连续涨跌停或节假日前上调保证金的常见幅度（规则上限，非历史拟合）"
+ }
+}

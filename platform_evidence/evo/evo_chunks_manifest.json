@@ -1,0 +1,366 @@
+{
+ "source": "https://www.pandaaiquant.com/evo/p31c268b50ca6",
+ "fetched_at": "2026-11-17T03:46:43.778Z",
+ "chunks": [
+  {
+   "file": "e13_chunk1.tar.gz",
+   "bytes": 68731,
+   "sha256": "68d11e76316bf34ccdfe815078b5a2e9dc69fb95be8987a3607bb8c6dacfcf3d",
+   "dir": "reports/20261117-0257-evo_chunk_124",
+   "runId": "rba195696a9ec493c8459f0b392fa2349",
+   "title": "evo_chunk_1/24",
+   "createdAt": "2026-11-16T18:58:13Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk2.tar.gz",
+   "bytes": 40070,
+   "sha256": "676f69a6ef9be3d5ff35556a9e53aa148d157658679a03337d27c4008e99601a",
+   "dir": "reports/20261117-0300-evo_chunk_224",
+   "runId": "rf8608b0cb130477ba30ee8817b69cc6b",
+   "title": "evo_chunk_2/24",
+   "createdAt": "2026-11-16T19:01:09Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk3.tar.gz",
+   "bytes": 68754,
+   "sha256": "0b0ca6c9c2d724585b706d216722c03f180eaed6ae65bfa7840b1df1282c67ee",
+   "dir": "reports/20261117-0301-evo_chunk_324",
+   "runId": "r1e7bdd9de65349559004ad1881f47e8d",
+   "title": "evo_chunk_3/24",
+   "createdAt": "2026-11-16T19:02:29Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk4.tar.gz",
+   "bytes": 40024,
+   "sha256": "12843c765c6b3a97b796659ac22597285ff06cd7cdbaa45dce8d6007a9047139",
+   "dir": "reports/20261117-0302-evo_chunk_424",
+   "runId": "r640d9688453b44388f9c192bcc65b5a5",
+   "title": "evo_chunk_4/24",
+   "createdAt": "2026-11-16T19:03:28Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk5.tar.gz",
+   "bytes": 70084,
+   "sha256": "82132ff4ccd6179811a7364dc5df0c854f1d13c8eed6934ba34856012a335853",
+   "dir": "reports/20261117-0303-evo_chunk_524",
+   "runId": "rfd3566d724294bada4ea0df8ea457183",
+   "title": "evo_chunk_5/24",
+   "createdAt": "2026-11-16T19:04:41Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk6.tar.gz",
+   "bytes": 45447,
+   "sha256": "eef0d20a84ec1a84ce5e02a6946b1bfc3501bb96b4c652cf12b5a8c784f966ba",
+   "dir": "reports/20261117-0305-evo_chunk_624",
+   "runId": "r8fdaa643603c45a29974ea3f2501ab6c",
+   "title": "evo_chunk_6/24",
+   "createdAt": "2026-11-16T19:05:40Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk7.tar.gz",
+   "bytes": 69209,
+   "sha256": "96e512ee6d344cff5982ea489f35c221325c91e31c53078d05bd2a90a6e04f10",
+   "dir": "reports/20261117-0306-evo_chunk_724",
+   "runId": "r55f13b3510dc41008b5ee6a0024545be",
+   "title": "evo_chunk_7/24",
+   "createdAt": "2026-11-16T19:06:51Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk8.tar.gz",
+   "bytes": 41702,
+   "sha256": "07533c39f63581e6c85f83964ddad687a542c8884c6fbe6e95113f46c08e0b0c",
+   "dir": "reports/20261117-0307-evo_chunk_824",
+   "runId": "r26f84eece2f54d638068e9583c684e33",
+   "title": "evo_chunk_8/24",
+   "createdAt": "2026-11-16T19:07:46Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk9.tar.gz",
+   "bytes": 79948,
+   "sha256": "efcafb9a2f323c996bf8c882aa699c46bd046e03ccee84403917d613a9a391ba",
+   "dir": "reports/20261117-0308-evo_chunk_924",
+   "runId": "r59e71923eb124ea0b6edafbf1db76698",
+   "title": "evo_chunk_9/24",
+   "createdAt": "2026-11-16T19:09:06Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk10.tar.gz",
+   "bytes": 51655,
+   "sha256": "23e4376bfb8edb616ed1f29b00c91bcfde156b1407d0fb53257239bb67039634",
+   "dir": "reports/20261117-0309-evo_chunk_1024",
+   "runId": "rbbdb6d0e013f4d40a1bd8e9310275730",
+   "title": "evo_chunk_10/24",
+   "createdAt": "2026-11-16T19:10:01Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk11.tar.gz",
+   "bytes": 88072,
+   "sha256": "1e782479a2ac431eb04a4def98f041eae1569a650829ea819e7fab91b579b848",
+   "dir": "reports/20261117-0310-evo_chunk_1124",
+   "runId": "re31aa1c933b44c019c1fcf44398fd9c4",
+   "title": "evo_chunk_11/24",
+   "createdAt": "2026-11-16T19:11:20Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk12.tar.gz",
+   "bytes": 52646,
+   "sha256": "c5fda0a2fb56a7585751d5999b89305c873d9a3623cd90590a787de8b9bf5463",
+   "dir": "reports/20261117-0311-evo_chunk_1224",
+   "runId": "r9747f5b2a0dc41459232cd1bb7143caa",
+   "title": "evo_chunk_12/24",
+   "createdAt": "2026-11-16T19:12:12Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk13.tar.gz",
+   "bytes": 68996,
+   "sha256": "16872c1fec119791cdaf7ea314f5c22640cad79ef5334e79918eb67c3cc4dea5",
+   "dir": "reports/20261117-0312-evo_chunk_1324",
+   "runId": "refc32723e6bc4cbb95fad4cf8f10b1ca",
+   "title": "evo_chunk_13/24",
+   "createdAt": "2026-11-16T19:13:23Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk14.tar.gz",
+   "bytes": 40032,
+   "sha256": "37f5e59dbb2fc9aed779cd0a5ca7dd4d1c1b1deb30fe85098ba8e9ba4301218a",
+   "dir": "reports/20261117-0313-evo_chunk_1424",
+   "runId": "r8ba9db4180544382af10e033e2873e58",
+   "title": "evo_chunk_14/24",
+   "createdAt": "2026-11-16T19:14:12Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk15.tar.gz",
+   "bytes": 68741,
+   "sha256": "37423e5abc0878cd4fe58527f43ede73e8afa02ed8c2b14797c5199e0c07fb7a",
+   "dir": "reports/20261117-0314-evo_chunk_1524",
+   "runId": "rae4cbe47c8274a47a1eb0645bf36fced",
+   "title": "evo_chunk_15/24",
+   "createdAt": "2026-11-16T19:15:14Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk16.tar.gz",
+   "bytes": 39968,
+   "sha256": "051d6bec7dd8866ab96d7767c377db78798680c88dcdb9f700a7fbc2c85b739a",
+   "dir": "reports/20261117-0315-evo_chunk_1624",
+   "runId": "r3f753d26314644fcb7b295600e4e2616",
+   "title": "evo_chunk_16/24",
+   "createdAt": "2026-11-16T19:16:03Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk17.tar.gz",
+   "bytes": 68729,
+   "sha256": "e78923b1c9908e84299b538b87501e647ecbe5d03cd3ae9302edcfc9430232d7",
+   "dir": "reports/20261117-0316-evo_chunk_1724",
+   "runId": "r195e2f28b63f43308a84634082337052",
+   "title": "evo_chunk_17/24",
+   "createdAt": "2026-11-16T19:17:05Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk18.tar.gz",
+   "bytes": 40016,
+   "sha256": "5be67de6c122e8a8998b767b4fc3b72c5a35c1076c16dfcfcd69cc5e5ed8df0b",
+   "dir": "reports/20261117-0317-evo_chunk_1824",
+   "runId": "r918a618804054b01b2ed9f0a57ca9be6",
+   "title": "evo_chunk_18/24",
+   "createdAt": "2026-11-16T19:17:52Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk19.tar.gz",
+   "bytes": 69372,
+   "sha256": "3da0bb1d4e3d39dc8b4172781dc39f5b1ed7c4ec2b1f70ac2477d868f45de01e",
+   "dir": "reports/20261117-0318-evo_chunk_1924",
+   "runId": "r58337abea05e4b3bbe93cc9bc9281007",
+   "title": "evo_chunk_19/24",
+   "createdAt": "2026-11-16T19:18:57Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk20.tar.gz",
+   "bytes": 40843,
+   "sha256": "32cd840a15c9a7377f2dfc5988da490ee6778f8cb9d3d1c5074c2d804c9f0df9",
+   "dir": "reports/20261117-0319-evo_chunk_2024",
+   "runId": "rd3b8fb165b4143158dc88ae430f2e12f",
+   "title": "evo_chunk_20/24",
+   "createdAt": "2026-11-16T19:19:47Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk21.tar.gz",
+   "bytes": 71394,
+   "sha256": "a763e3bacd64502f9fdf328797255ac4b60d7197ee978a1eb9232ec95462dd73",
+   "dir": "reports/20261117-0320-evo_chunk_2124",
+   "runId": "r45af82bcd90b400195425077ab6ebac5",
+   "title": "evo_chunk_21/24",
+   "createdAt": "2026-11-16T19:20:52Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk22.tar.gz",
+   "bytes": 43247,
+   "sha256": "d4d06958e48c7c506d1e315f370aebff312cded87413603485cb0960f9c4cdfd",
+   "dir": "reports/20261117-0321-evo_chunk_2224",
+   "runId": "rd9ea122b3dc541f9b0d69d1a35880eaf",
+   "title": "evo_chunk_22/24",
+   "createdAt": "2026-11-16T19:21:42Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk23.tar.gz",
+   "bytes": 95307,
+   "sha256": "b37a793e363d2af18dc321809207ac82c754c2c009c1338153dcfd5c27616369",
+   "dir": "reports/20261117-0322-evo_chunk_2324",
+   "runId": "rc793fa9de0ca4e03919dca96835fb3d1",
+   "title": "evo_chunk_23/24",
+   "createdAt": "2026-11-16T19:23:25Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  },
+  {
+   "file": "e13_chunk24.tar.gz",
+   "bytes": 57361,
+   "sha256": "fca5534c80f0cba61bafab448d87ce8ed46c7c40df1a672f124ea01f3703b144",
+   "dir": "reports/20261117-0323-evo_chunk_2424",
+   "runId": "r5387363c76934357aae0192577de7009",
+   "title": "evo_chunk_24/24",
+   "createdAt": "2026-11-16T19:24:20Z",
+   "degrade": {
+    "level": 3,
+    "lostGuards": [
+     "evo_quant"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "adjudication": {
+  "structure_mismatch": 0,
+  "discrete": 40109,
+  "discrete_differ": 0,
+  "floats": 3893,
+  "floats_differ": 26,
+  "max_rel_diff": 8.720551470976219e-16,
+  "runs": 156
+ },
+ "runs": {
+  "structure_mismatch": 0,
+  "discrete": 588506,
+  "discrete_differ": 0,
+  "floats": 58520,
+  "floats_differ": 312,
+  "max_rel_diff": 3.915582429373462e-13,
+  "run_files_compared_A0_A2": 132
+ },
+ "tables": {
+  "detection_matrix.csv": true,
+  "arm_summary.csv": true,
+  "evals_to_detect.csv": true,
+  "clean_vulnerabilities.csv": false
+ },
+ "note": "EVO = A0/A1/A2 from 24 EVO chunks + A3 from a3_local; local = A0/A1/A2 from local_run2 + A3 from a3_local. Same frozen code (freeze 2026-11-17 02:52:51; A0-A2 code identical to 02:15 freeze). clean_vulnerabilities.csv differs only in one severity value at the last float digit."
+}

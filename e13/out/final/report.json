@@ -1,0 +1,130 @@
+{
+ "plain_text": "冻结预算下（每个臂对每个策略版本 300 次回放），对 7 个封存缺陷的发现率：固定压力清单（基线） 43%；随机搜索 57%（90% 区间 [0.51, 0.63]）；进化搜索（MAP-Elites） 46%（90% 区间 [0.34, 0.57]）；LLM 红队 50%（90% 区间 [0.43, 0.57]）。\n只有主动搜索抓到、固定清单抓不到的：V01（信号）、V02（仓位）、V05（风控-保证金）。\n所有方法都没抓到的盲区：V06（风控-回撤停机）。\nLLM 红队臂的 7200 次回放里有 2850 次是模型输出无法解析或越界后的随机补位，它的发现率不能全部归功于 LLM。\n误报率（上报后未通过扰动复跑或合理性检查的比例）：固定压力清单（基线） 27%；随机搜索 23%；进化搜索（MAP-Elites） 21%；LLM 红队 37%；所有上报逐字复跑均 100% 一致。\n原策略上确认的真实情景漏洞：单日亏损超预算（最短反例：limit_lock(sector:agri @558: days=1, direction=-1)，固定清单也能发现）。\n软件健壮性漏洞（单独统计）：单日亏损超预算（bad_price(sector:agri @428: factor=1.141)）；在陈旧数据上开仓（stale_bars(sector:agri @816: length=3)）；窗口回撤超预算（future_perturb(sector:agri @377: scale=0.07165, seed=185)）。\n修复版 S1（板块净敞口上限 + 按当天实际涨跌停的数据校验 + 陈旧检测）：原反例未全部消除；固定清单命中不多于原策略；保留期正常表现超出容差（年化下降 0.92 个百分点（容差 0.5），夏普下降 0.096（容差 0.10））；同预算再搜索没有发现修复引入的新问题。\n合成攻击路径不是真实样本外业绩；结论只对这一类策略、这套语法和这个预算成立。",
+ "only_search": [
+  "V01",
+  "V02",
+  "V05"
+ ],
+ "only_list": [],
+ "missed": [
+  "V06"
+ ],
+ "cards": [
+  {
+   "cls": "robust",
+   "oracle": "day_loss",
+   "oracle_cn": "单日亏损超预算",
+   "found_by": "A0_fixed,A1_random,A2_evolve",
+   "fixed_list_found": true,
+   "original": "bad_price(sector:agri @428: factor=10)",
+   "minimal": "bad_price(sector:agri @428: factor=1.141)",
+   "minimal_json": {
+    "prims": [
+     {
+      "kind": "bad_price",
+      "target": "sector:agri",
+      "t0": 428,
+      "params": {
+       "factor": 1.140625
+      }
+     }
+    ],
+    "arm": "A1_random",
+    "cls": "robust",
+    "text": "bad_price(sector:agri @428: factor=1.141)"
+   },
+   "start_date": "20210709",
+   "still_triggers": true,
+   "shrink_evals": 6
+  },
+  {
+   "cls": "robust",
+   "oracle": "stale_open",
+   "oracle_cn": "在陈旧数据上开仓",
+   "found_by": "A1_random,A2_evolve,A3_llm",
+   "fixed_list_found": false,
+   "original": "stale_bars(sector:agri @816: length=5)",
+   "minimal": "stale_bars(sector:agri @816: length=3)",
+   "minimal_json": {
+    "prims": [
+     {
+      "kind": "stale_bars",
+      "target": "sector:agri",
+      "t0": 816,
+      "params": {
+       "length": 3
+      }
+     }
+    ],
+    "arm": "A1_random",
+    "cls": "robust",
+    "text": "stale_bars(sector:agri @816: length=3)"
+   },
+   "start_date": "20230216",
+   "still_triggers": true,
+   "shrink_evals": 6
+  },
+  {
+   "cls": "robust",
+   "oracle": "dd_runaway",
+   "oracle_cn": "窗口回撤超预算",
+   "found_by": "A2_evolve",
+   "fixed_list_found": false,
+   "original": "future_perturb(sector:agri @377: scale=0.1638, seed=185)",
+   "minimal": "future_perturb(sector:agri @377: scale=0.07165, seed=185)",
+   "minimal_json": {
+    "prims": [
+     {
+      "kind": "future_perturb",
+      "target": "sector:agri",
+      "t0": 377,
+      "params": {
+       "scale": 0.07164980063448212,
+       "seed": 185
+      }
+     }
+    ],
+    "arm": "A2_evolve",
+    "cls": "robust",
+    "text": "future_perturb(sector:agri @377: scale=0.07165, seed=185)"
+   },
+   "start_date": "20210423",
+   "still_triggers": true,
+   "shrink_evals": 6
+  },
+  {
+   "cls": "real",
+   "oracle": "day_loss",
+   "oracle_cn": "单日亏损超预算",
+   "found_by": "A0_fixed",
+   "fixed_list_found": true,
+   "original": "limit_lock(sector:agri @558: days=1, direction=-1)",
+   "minimal": "limit_lock(sector:agri @558: days=1, direction=-1)",
+   "minimal_json": {
+    "prims": [
+     {
+      "kind": "limit_lock",
+      "target": "sector:agri",
+      "t0": 558,
+      "params": {
+       "days": 1,
+       "direction": -1
+      }
+     }
+    ],
+    "arm": "A0_fixed",
+    "cls": "real",
+    "text": "limit_lock(sector:agri @558: days=1, direction=-1)"
+   },
+   "start_date": "20220119",
+   "still_triggers": true,
+   "shrink_evals": 0
+  }
+ ],
+ "regression": {
+  "R1_all_fixed": false,
+  "R2_not_worse": true,
+  "R3_within_tolerance": false,
+  "R4_no_new_issue": true
+ }
+}
