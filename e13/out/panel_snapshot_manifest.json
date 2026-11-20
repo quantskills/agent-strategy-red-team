@@ -1,0 +1,19 @@
+{
+ "snapshot": "LSY04-E13 原冻结面板",
+ "extract_to": "e13/data/panel/",
+ "freeze": {
+  "frozen_at": "2026-11-17 02:52:51",
+  "data.input_digest": "3a216d03b7f24ea8"
+ },
+ "same_as": "e13_bundle_20261117_0256.tar.gz（EVO 运行包，sha256 8dd26ded170cc256c939d0f2290b2feecc297f13daf6b1651f4f4a524430e0bb）内的 e13/data/panel/",
+ "files": {
+  "panel_arrays.npz": {
+   "sha256": "e534d98e799d66b763ebfcd17951c5ebd32f7d17eeff37bb73faf047d1900d24",
+   "bytes": 810888
+  },
+  "panel_meta.json": {
+   "sha256": "11d3f460e13ff27e5cef7909f0aa6920abeb018cb4c30d71b59a70fc6dfd7e6e",
+   "bytes": 738273
+  }
+ }
+}

@@ -44,6 +44,10 @@ python test_e13.py
 
 On PandaAI EVO (120 s per run, no multiprocessing, runs isolated from each other) the experiment is split into 24 chunks via `e13/evo_chunk.py`; results are merged with `e13/merge_runs.py`. The EVO run log, approval screenshots, run IDs, raw result chunks and the EVO-vs-local comparison are in [platform_evidence/evo/](platform_evidence/evo/run_log.md).
 
+## Reviewer data snapshot
+
+The frozen panel `e13/data/panel/` is provided as the 量枢院 submission attachment `LSY04-E13_frozen_panel_snapshot.zip` (sha256 `1a3639fe…`, byte-identical to the panel inside the EVO run bundle). `python e13/verify_snapshot.py <zip>` installs it and checks it against `e13/out/panel_snapshot_manifest.json` and the frozen `input_digest`; `python e13/test_e13.py` then reports 6 PASS, 0 SKIPPED (verified in a clean copy).
+
 ## Data source, assumptions, parameters, limitations and risk
 
 Data source: PandaData futures interfaces ([references/api_guide.md](references/api_guide.md)). Replay assumptions (open fill ±1 tick, ≤10% of daily volume, no fills on the locked side, margin rate +3pp, 1bp fees), parameters (development/holdout windows, replay window, budget and seeds, risk-card thresholds) and known limitations are in [references/source_boundary.md](references/source_boundary.md). Main limitations: one strategy family and ten defect classes; defects and grammar were designed by the same author (bias reduced by sealing and freezing, not removed); synthetic attack paths are plausible scenarios, not out-of-sample performance; execution semantics are verified only in replay because the futures contest was not used ([references/execution_scope.md](references/execution_scope.md)). All voided runs and failed attempts are recorded in [ATTEMPTS.md](ATTEMPTS.md).

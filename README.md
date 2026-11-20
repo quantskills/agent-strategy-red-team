@@ -49,9 +49,20 @@ python summarize.py out && python regress.py --runs out --fix v2 && python repor
 python test_e13.py                           # 离线自测
 ```
 
-可移植面板 `e13/data/panel/`（npz + json）由 PandaData 数据生成，按数据来源约定不随仓库分发；`fetch_data.py` 拉取后 `run_e13.py freeze` 会重建，指纹与 `e13/out/freeze.json` 的 `data.input_sha256_16` 比对。
+可移植面板 `e13/data/panel/`（npz + json）由 PandaData 数据生成，不随公开仓库分发（评审用快照见下一节）；`fetch_data.py` 拉取后 `run_e13.py freeze` 会重建，指纹与 `e13/out/freeze.json` 的 `data.input_sha256_16` 比对。
 
 **在 PandaAI EVO 上：** EVO 的"运行 Python 脚本"单次最多 120 秒、禁止多进程、每次运行互不可见，所以实验拆成 24 块（12 个版本 × {A0+A1, A2}）。把 `bash e13/make_bundle.sh` 打出的包和 `e13/evo_chunk.py` 的 24 份副本（`evo_chunk_1.py` … `evo_chunk_24.py`，文件名决定块号）上传到工作区根目录，在研究助手里逐块运行；每块产出 `e13_chunk<k>.tar.gz`。下载后用 `python merge_runs.py <新目录> e13_chunk*.tar.gz --extra out/a3_local` 合并，再跑汇总、回归和报告。本仓库的 EVO 运行记录见 [platform_evidence/evo/run_log.md](platform_evidence/evo/run_log.md)。LLM 臂需要模型密钥，密钥不上传云端，在本机用同一份冻结代码运行。
+
+## 评审数据快照（不用 PandaData 账号也能复跑）
+
+原冻结面板 `e13/data/panel/` 作为量枢院成果附件 `LSY04-E13_frozen_panel_snapshot.zip` 提供（sha256 `1a3639feac47abee93af931c24874ff7933a7357068c1060d720b1cfdb95cb64`），与 EVO 运行包 `e13_bundle_20261117_0256.tar.gz` 里的面板逐字节相同。
+
+```bash
+python e13/verify_snapshot.py LSY04-E13_frozen_panel_snapshot.zip   # 解压到 e13/data/panel/ 并核对
+python e13/test_e13.py                                              # 6 PASS, 0 SKIPPED
+```
+
+`verify_snapshot.py` 逐文件核对 sha256（清单 `e13/out/panel_snapshot_manifest.json`），并核对面板里记录的 406 个原始输入指纹与冻结记录 `e13/out/freeze.json` 完全相同（`input_digest` 3a216d03b7f24ea8）。在不含本机任何数据的干净副本里实测：装快照前自测为 2 PASS、4 SKIPPED，装上后 6 项全部通过（包络夹回、叠加冲击合理性、同攻击复跑一致、回退测试定位 V03）。
 
 ## 输出
 
