@@ -15,5 +15,11 @@
    "sha256": "11d3f460e13ff27e5cef7909f0aa6920abeb018cb4c30d71b59a70fc6dfd7e6e",
    "bytes": 738273
   }
+ },
+ "zips": {
+  "LSY04-E13_frozen_panel_snapshot.zip": {
+   "sha256": "1a3639feac47abee93af931c24874ff7933a7357068c1060d720b1cfdb95cb64",
+   "bytes": 817550
+  }
  }
 }
