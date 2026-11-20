@@ -1,4 +1,4 @@
-"""安装并核对评审用的冻结面板快照：python e13/verify_snapshot.py <LSY04-E13_frozen_panel_snapshot.zip>
+"""安装并核对评审用的冻结面板快照：python e13/verify_snapshot.py <LSY04-E13_红队Agent主动寻找策略失效反例_冻结面板快照.zip>
 
 快照随量枢院成果附件提供（行情数据不随公开仓库分发）。本脚本：
 1. 把 zip 里 e13/data/panel/ 下的文件解压到仓库对应位置（拒绝越界路径）；

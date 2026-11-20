@@ -17,9 +17,9 @@
   }
  },
  "zips": {
-  "LSY04-E13_frozen_panel_snapshot.zip": {
-   "sha256": "1a3639feac47abee93af931c24874ff7933a7357068c1060d720b1cfdb95cb64",
-   "bytes": 817550
+  "LSY04-E13_红队Agent主动寻找策略失效反例_冻结面板快照.zip": {
+   "sha256": "db371e128daaae0b07dc5f8490b27b679987cb0520b2c83c8550076f8f98cc38",
+   "bytes": 818404
   }
  }
 }

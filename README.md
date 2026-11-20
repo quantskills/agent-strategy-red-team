@@ -55,10 +55,10 @@ python test_e13.py                           # 离线自测
 
 ## 评审数据快照（不用 PandaData 账号也能复跑）
 
-原冻结面板 `e13/data/panel/` 作为量枢院成果附件 `LSY04-E13_frozen_panel_snapshot.zip` 提供（sha256 `1a3639feac47abee93af931c24874ff7933a7357068c1060d720b1cfdb95cb64`），与 EVO 运行包 `e13_bundle_20261117_0256.tar.gz` 里的面板逐字节相同。
+原冻结面板 `e13/data/panel/` 作为量枢院成果附件 `LSY04-E13_红队Agent主动寻找策略失效反例_冻结面板快照.zip` 提供（sha256 `db371e128daaae0b07dc5f8490b27b679987cb0520b2c83c8550076f8f98cc38`），与 EVO 运行包 `e13_bundle_20261117_0256.tar.gz` 里的面板逐字节相同。
 
 ```bash
-python e13/verify_snapshot.py LSY04-E13_frozen_panel_snapshot.zip   # 解压到 e13/data/panel/ 并核对
+python e13/verify_snapshot.py LSY04-E13_红队Agent主动寻找策略失效反例_冻结面板快照.zip   # 解压到 e13/data/panel/ 并核对
 python e13/test_e13.py                                              # 6 PASS, 0 SKIPPED
 ```
 

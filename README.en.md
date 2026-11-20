@@ -46,7 +46,7 @@ On PandaAI EVO (120 s per run, no multiprocessing, runs isolated from each other
 
 ## Reviewer data snapshot
 
-The frozen panel `e13/data/panel/` is provided as the 量枢院 submission attachment `LSY04-E13_frozen_panel_snapshot.zip` (sha256 `1a3639fe…`, byte-identical to the panel inside the EVO run bundle). `python e13/verify_snapshot.py <zip>` installs it and checks it against `e13/out/panel_snapshot_manifest.json` and the frozen `input_digest`; `python e13/test_e13.py` then reports 6 PASS, 0 SKIPPED (verified in a clean copy).
+The frozen panel `e13/data/panel/` is provided as the 量枢院 submission attachment `LSY04-E13_红队Agent主动寻找策略失效反例_冻结面板快照.zip` (sha256 `db371e12…`, byte-identical to the panel inside the EVO run bundle). `python e13/verify_snapshot.py <zip>` installs it and checks it against `e13/out/panel_snapshot_manifest.json` and the frozen `input_digest`; `python e13/test_e13.py` then reports 6 PASS, 0 SKIPPED (verified in a clean copy).
 
 ## Data source, assumptions, parameters, limitations and risk
 
